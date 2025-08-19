@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+  --dark-red: #5e1212;
+  --golden: #d4af37;
+  --black-glass: rgba(0, 0, 0, 0.85);
+  --shadow-glow: #ebb12a;
+  --deep-red: #5f1212;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #7e1212 0%, #5e1212 100%);
+  color: #eee;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--black-glass);
+  box-shadow: 0 0 20px var(--deep-red);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 1rem 2rem;
+  backdrop-filter: blur(12px);
+}
+
+.nav-link {
+  color: var(--golden);
+  font-weight: 700;
+  text-shadow: 0 0 6px var(--golden);
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #fff;
+  text-shadow: 0 0 20px var(--shadow-glow);
+}
+
+.inicio-fundo {
+  background: none !important;
+  padding: 3rem 1rem 4rem 1rem;
+  margin-top: 5rem;
+  text-align: center;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 0 30px var(--golden);
+}
+
+.inicio-fundo img {
+  max-width: 320px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 25px var(--golden);
+  margin-bottom: 1.5rem;
+}
+
+.inicio-fundo figcaption {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--golden);
+  text-shadow:
+    2px 2px var(--deep-red),
+    0 0 20px var(--golden);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.05em;
+  position: relative;
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+/* Ornamento estilo coroa acima do título */
+.inicio-fundo figcaption::before {
+  content: "";
+  font-size: 3rem;
+  color: var(--golden);
+  position: absolute;
+  top: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-shadow: 0 0 10px var(--golden);
+}
+
+/* Botão estilo realeza */
+.botao-inicio {
+  background-color: var(--dark-red);
+  border: 3px solid var(--golden);
+  color: var(--golden);
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.75em 2em;
+  border-radius: 40px;
+  cursor: pointer;
+  box-shadow: 0 0 20px var(--golden);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.botao-inicio:hover {
+  background-color: var(--golden);
+  color: var(--deep-red);
+  box-shadow: 0 0 35px var(--shadow-glow);
+  transform: scale(1.08);
+}
+
+/* Seção tropicalia com moldura dourada com ornamentos */
+#tropicalia {
+  background-color: #5e1212;
+  border: 5px solid var(--golden);
+  border-radius: 25px;
+  padding: 3rem 4rem;
+  margin: 3rem auto;
+  max-width: 900px;
+  position: relative;
+  box-shadow: 0 0 35px var(--golden);
+}
+
+#tropicalia::before, #tropicalia::after {
+  content: "❦";
+  font-size: 3.5rem;
+  color: var(--golden);
+  position: absolute;
+  top: 10px;
+  text-shadow: 0 0 8px var(--golden);
+  opacity: 0.8;
+}
+
+#tropicalia::before {
+  left: 15px;
+  transform: rotate(-15deg);
+}
+
+#tropicalia::after {
+  right: 15px;
+  transform: rotate(15deg);
+}
+
+#tropicalia h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.2rem;
+  font-style: italic;
+  color: var(--golden);
+  text-shadow: 0 0 20px var(--golden);
+  margin-bottom: 1.2rem;
+}
+
+/* Galeria com moldura dourada simples */
+#galeria {
+  background-color: #5e1212;
+  padding: 3rem 2rem;
+  border-radius: 30px;
+  max-width: 900px;
+  margin: 3rem auto;
+  border: 4px solid var(--golden);
+  box-shadow: 0 0 45px var(--deep-red);
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+#galeria img {
+  border-radius: 15px;
+  max-width: 100%;
+  box-shadow: 0 0 30px var(--golden);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+#galeria img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 50px var(--shadow-glow);
+}
+
+/* Formulário com bordas douradas e sombra */
+#contato {
+  max-width: 900px;
+  margin: 3rem auto 5rem auto;
+  padding: 3rem 3rem 4rem 3rem;
+  background-color: #5e1212;
+  border-radius: 25px;
+  border: 4px solid var(--golden);
+  box-shadow: 0 0 40px var(--golden);
+}
+
+.formulario {
+  background: transparent;
+  color: var(--golden);
+}
+
+.formulario label {
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 0.75em 1em;
+  border-radius: 12px;
+  border: 2px solid var(--golden);
+  background-color: #e62323;
+  color: var(--golden);
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1.2rem;
+  box-shadow: inset 0 0 15px rgba(179, 142, 57, 0.7);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+  outline: none;
+  border-color: var(--shadow-glow);
+  box-shadow: 0 0 15px var(--shadow-glow);
+  background-color: #f3eeee;
+  color: #fff;
+}
+
+.formulario button {
+  background-color: var(--dark-red);
+  border: 3px solid var(--golden);
+  color: var(--golden);
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  padding: 0.8em 2.5em;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 0 25px var(--golden);
+  transition: all 0.3s ease;
+}
+
+.formulario button:hover {
+  background-color: var(--golden);
+  color: var(--deep-red);
+  box-shadow: 0 0 45px var(--shadow-glow);
+  transform: scale(1.1);
+}
+
+/* Footer dourado simples */
+footer {
+  text-align: center;
+  font-style: italic;
+  color: var(--golden);
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px var(--golden);
+}
+
+footer i {
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  color: var(--golden);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+footer i:hover {
+  color: var(--shadow-glow);
+}

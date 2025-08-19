@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Fonte Playfair Display para o título -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+    <title>Kanye West</title>
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+        rel="stylesheet"
+    />
+    <link
+        rel="stylesheet"   
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        /* Header sem fundo (transparente) e sem sombra */
+        header {
+            background-color: transparent;
+            box-shadow: none;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Fonte do título do header */
+        .nav-logo {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 2.5rem;
+            color: #f3eded;
+            letter-spacing: 2px;
+        }
+
+        /* Removendo o fundo da seção de boas-vindas e centralizando conteúdo */
+        .inicio-fundo {
+            background: none !important;
+            height: auto;
+            min-height: 400px;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            flex-direction: column;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .inicio-fundo img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            max-height: 350px;
+            margin-bottom: 1rem;
+        }
+
+        .inicio-fundo figcaption {
+            color: rgb(255, 255, 255);
+            font-style: italic;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="p-5" role="banner">
+        <nav class="container d-flex justify-content-between align-items-center" role="navigation" aria-label="Menu principal">
+            <h1 class="nav-logo">
+                Kanye West
+            </h1>
+            <ul class="nav mt-5" role="menubar">
+                <li class="nav-item" role="none"><a class="nav-link" href="#inicio" role="menuitem">Início</a></li>
+                <li class="nav-item" role="none"><a class="nav-link" href="#galeria" role="menuitem">Galeria</a></li>
+                <li class="nav-item" role="none"><a class="nav-link" href="#contato" role="menuitem">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section id="inicio" class="my-5" aria-label="Seção de boas-vindas">
+            <div class="inicio-fundo">
+                <figure>
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ47OLk0OQdGt2ukiVe_0bAYud8hRvchH_REg&s"
+                        alt="Capa do álbum My Beautiful Dark Twisted Fantasy de Kanye West"
+                        loading="lazy"
+                    />
+                    <figcaption>
+                        My Beautiful Dark Twisted Fantasy
+                    </figcaption>
+                </figure>
+                <a href="#tropicalia" class="btn btn-primary btn-lg botao-inicio fw-semibold" aria-label="Botão para conhecer mais sobre My Beautiful Dark Twisted Fantasy">
+                    Quero conhecer!
+                </a>
+            </div>
+        </section>
+
+        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia" aria-label="Descrição do álbum">
+            <div class="container d-flex align-items-center">
+                <article class="col-12 col-md-6">
+                    <h2>O que foi My Beautiful Dark Twisted Fantasy?</h2>
+                    <p class="p-2">
+                        "My Beautiful Dark Twisted Fantasy" é o quinto álbum de estúdio de Kanye West, lançado em 2010. Considerado sua obra-prima e um dos maiores álbuns do hip-hop, o disco mistura rap progressivo, rock, soul e música eletrônica. Foi criado após um período difícil na vida de Kanye, incluindo polêmicas e a morte de sua mãe, durante um retiro no Havaí com produtores e artistas. O álbum aborda temas como ego, arrogância, redenção, culpa, fama, amor, perda e a busca pela perfeição, refletindo sobre sua imagem pública e as consequências de suas ações.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="galeria" aria-label="Galeria de imagens">
+            <h2 class="text-center pt-5">Galeria</h2>
+            <div class="container p-3 mt-3 fundo-galeria">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <img
+                            src="https://pmhsredandblack.com/wp-content/uploads/2017/05/Kanye_West_At_the_Big_Chill_2011-667x1000.jpg"
+                            class="img-fluid rounded-5"
+                            alt="Foto histórica de Kanye West no Big Chill Festival 2011"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="col-md-4">
+                        <img
+                            src="https://media.gettyimages.com/id/102471503/pt/foto/los-angeles-ca-musician-kanye-west-performs-onstage-during-the-2010-bet-awards-held-at-the.jpg?s=612x612&w=gi&k=20&c=W-lygTq7iyBLKA9LzkTdJx38eHdUPOEUchBUEaPj-84="
+                            class="img-fluid rounded-5"
+                            alt="Kanye West performando no palco"
+                            loading="lazy"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" aria-label="Formulário de contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <form class="col-md-8 col-lg-10 rounded-5 formulario" novalidate>
+                    <h2 class="mb-3">Entre em contato</h2>
+                    <div class="form-group mb-3">
+                        <label for="nome">Nome</label>
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            class="form-control rounded-3 mt-1"
+                            placeholder="Digite seu nome completo"
+                            aria-required="true"
+                        />
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="form-control rounded-3 mt-1"
+                            placeholder="Digite seu email"
+                            aria-required="true"
+                        />
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea
+                            id="mensagem"
+                            name="mensagem"
+                            class="form-control rounded-4 mt-2"
+                            rows="4"
+                            placeholder="Escreva sua mensagem"
+                            aria-required="true"
+                        ></textarea>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button
+                            type="submit"
+                            class="btn btn-primary btn-lg rounded-pill tamanho-botao"
+                            aria-label="Enviar mensagem"
+                        >
+                            Enviar mensagem
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center p-3 fst-italic" role="contentinfo">
+        <p>Acesse nossas redes:</p>
+        <nav aria-label="Redes sociais">
+            <i class="bi bi-whatsapp" role="img" aria-label="WhatsApp"></i>
+            <i class="bi bi-instagram" role="img" aria-label="Instagram"></i>
+            <i class="bi bi-tiktok" role="img" aria-label="TikTok"></i>
+        </nav>
+        <p class="mt-3">Desenvolvido por Guilherme Prates. Projeto fictício sem fins comerciais.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
